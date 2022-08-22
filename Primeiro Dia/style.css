@@ -1,0 +1,22 @@
+
+p{
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size: xx-large;
+    margin: 295px 0px 0px -16px;
+    cursor: default;
+}
+
+p:hover{
+    opacity: 0.5;
+    transition: opacity 0.8s;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
