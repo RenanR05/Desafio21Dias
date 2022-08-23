@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    position: relative;
+    background: rgb(204, 204, 204);
+    width: 40px;
+    height: 20px;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.button{
+    background: rgb(173, 255, 47);
+    border: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    pointer-events: none;
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle-input:checked ~ .slider{
+    background: rgb(173, 255, 47);
+}
+
+.toggle-input:checked ~ .slider > .button{
+    background: rgb(204, 204, 204);
+    left: 23px;
+}
+
+.toggle-input {
+    display: none;
+}
